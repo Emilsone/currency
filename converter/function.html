@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: rgb(200, 200, 200);
+        }
+
+        .container {
+            border: 4px solid black;
+            width: 205px;
+            height: 310px;
+            text-align: center;
+            background-color: rgb(42, 42, 42);
+            padding: 10px;
+            padding-right: 25px;
+            margin-left: 450px;
+            margin-top: 70px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .screen {
+            width: 100%;
+            height: 45px;
+            background-color: rgb(146, 175, 126);
+            outline: none;
+            border: none;
+            text-align: right;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding-right: 10px;
+            margin-bottom: -20px;
+            border-radius: 4px;
+            color: #000000;
+        }
+
+        .button {
+            width: 40px;
+            height: 35px;
+            font-size: 20px;
+            margin: 5px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        #equal {
+            margin-bottom: 7px;
+            background-color: #000000;
+            color: white;
+            border: 2px solid black;
+        }
+
+        #butt {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form name="screen">
+            <input type="text" readonly class="screen">
+        </form>
+        <table class="table1">
+            <tr>
+                <td><input class="button" type="button" onclick="shownum('+')" value="+" id="butt"></td>
+                <td><input class="button" type="button" onclick="shownum('*')" value="x" id="butt"></td>
+                <td><input class="button" type="button" onclick="shownum(7)" value="D" id="butt"></td>
+                <td><input class="button" type="button" onclick="shownum(7)" value="/" id="butt"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" onclick="shownum(7)" value="4"></td>
+                <td><input class="button" type="button" onclick="shownum(7)" value="5"></td>
+                <td><input class="button" type="button" onclick="shownum(7)" value="6"></td>
+                <td rowspan="6"><input class="button" style="height: 190px;" type="button" onclick="equals()" value="="
+                        id="equal"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" onclick="shownum(7)" value="1"></td>
+                <td><input class="button" type="button" onclick="shownum(7)" value="2"></td>
+                <td><input class="button" type="button" onclick="shownum(7)" value="3"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" onclick="shownum(7)" value="0"></td>
+                <td><input class="button" type="button" onclick="shownum(7)" value="."></td>
+                <td><input class="button" type="button" onclick="shownum(7)" value="c"></td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

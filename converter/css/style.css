@@ -1,0 +1,34 @@
+body{
+background-color: #f7e5ce;
+
+
+}
+.card{
+    background-color:rgb(53,41,25);
+    height: 45vh;
+    width: 390px;
+    margin-left: 419px;
+    margin-top: 140px;
+    margin-bottom: 10px;
+}
+.converter{
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 47px;
+}
+input{
+margin-left: 50px;
+height: 40px;
+width: 265px;
+}
+.con2{
+    margin-top: 20px;
+}
+.input{
+    width: 100px;
+    background: transparent;
+    color: white;
+    margin-left: 33%;
+    margin-top: 10px;
+}
